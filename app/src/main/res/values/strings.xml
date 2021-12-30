@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Quix</string>
+    <string name="button">Button1</string>
+    <string name="asj_quiz_app">ASJ Quiz App</string>
+    <string name="asj_quiz">ASJ Quiz</string>
+    <string name="todo">TODO</string>
+    <string name="start">Start</string>
+    <string name="title_activity_quiz_page">quiz_page</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="textview1">TextView</string>
+    <string name="submit">Submit</string>
+    <string name="points">Points :</string>
+    <string name="question">Question</string>
+    <string name="option_a">Option A</string>
+    <string name="option_b">Option B</string>
+    <string name="option_c">Option C</string>
+    <string name="option_d">Option D</string>
+</resources>
