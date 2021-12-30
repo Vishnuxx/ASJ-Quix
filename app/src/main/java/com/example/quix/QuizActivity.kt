@@ -63,22 +63,50 @@ class QuizActivity : AppCompatActivity() {
         fun initQuestionBank() {
 
             questionBank.add(
-                Question("what is this" ,
-                    "pen",
-                    "pencil",
-                    "erazer" ,
-                    "scale" ,
-                    "scale")
+                Question("what is Kotlin?" ,
+                    "Scripting Language",
+                    "Programming Language",
+                    "Markup Language" ,
+                    "Styling Language" ,
+                    "Programming Language")
             )
 
             questionBank.add(
-                Question("what is this second question" ,
-                    "pen",
-                    "pencil",
-                    "erazer" ,
-                    "scale" ,
-                    "scale")
+                Question("Kotlin was developed by which company?" ,
+                    "Facebook",
+                    "Youtube",
+                    "Jetbrains" ,
+                    "Redbull" ,
+                    "Jetbrains")
             )
+
+            questionBank.add(
+                Question("Which file extension is used to save Kotlin files." ,
+                    ".java",
+                    ".kot",
+                    ".kt or .kts" ,
+                    ".android" ,
+                    ".kt or .kts")
+            )
+
+            questionBank.add(
+                Question("What is an immutable variable?" ,
+                    "A variable that cannot change, read-only",
+                    "A variable that can be changed",
+                    "A variable used for string interpolation" ,
+                    "All of these" ,
+                    "A variable that cannot change, read-only")
+            )
+
+            questionBank.add(
+                Question("How to make a multi lined comment in Kotlin?" ,
+                    "//",
+                    "/* */",
+                    "/ multi line comment /" ,
+                    "#" ,
+                    "/* */")
+            )
+
 
             currentQuestion = questionBank.get(questionNumber)
             questionText.setText(currentQuestion!!.question)
@@ -121,7 +149,7 @@ class QuizActivity : AppCompatActivity() {
 
                 if (isCorrect(selectedAnswer , currentQuestion)) {
                     refreshRadioButtons()
-                    points = points + 5
+                    points = points + 10
                     score.text = "Points: " + points
                     questionNumber++
                     checkLastQuestionOnSubmit()
